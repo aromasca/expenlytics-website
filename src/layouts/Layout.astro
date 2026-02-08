@@ -21,6 +21,15 @@ const { title, description = 'Local-first spending analytics powered by AI. Extr
     <meta property="og:type" content="website" />
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
+    {import.meta.env.PROD && (
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-TFSZJSY4CC"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-TFSZJSY4CC');
+      </script>
+    )}
   </head>
   <body class="bg-zinc-950 text-zinc-100 antialiased">
     <slot />
