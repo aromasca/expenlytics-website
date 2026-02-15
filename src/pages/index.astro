@@ -57,9 +57,9 @@ import Layout from '../layouts/Layout.astro';
         <span class="text-emerald-400">money goes</span>
       </h1>
       <p class="mt-6 text-lg text-zinc-400 max-w-2xl mx-auto leading-relaxed">
-        Upload PDF bank statements. AI extracts and categorizes every transaction.
-        Detect subscriptions, visualize spending flows, and get actionable insights —
-        all running locally on your machine.
+        Import PDF bank statements into your local app using your own Anthropic API key.
+        AI extracts and categorizes every transaction. Detect subscriptions, visualize spending flows, and get actionable insights —
+        all running locally on your machine. Your financial data never leaves.
       </p>
       <div class="mt-10 flex items-center justify-center gap-4">
         <a
@@ -83,7 +83,7 @@ import Layout from '../layouts/Layout.astro';
     <!-- Hero screenshot -->
     <div class="mx-auto mt-16 max-w-5xl">
       <div class="rounded-xl border border-zinc-800 overflow-hidden shadow-2xl shadow-black/50">
-        <img src="/screenshots/reports.png" alt="Expenlytics reports dashboard showing spending summary, charts, and analytics" class="w-full" />
+        <img src="/screenshots/insights-enhanced.png" alt="Expenlytics AI-powered insights dashboard showing health score, spending metrics, and behavioral patterns" class="w-full" />
       </div>
     </div>
 
@@ -149,7 +149,7 @@ import Layout from '../layouts/Layout.astro';
           </div>
           <h3 class="text-sm font-semibold mb-2">AI Spending Insights</h3>
           <p class="text-xs text-zinc-400 leading-relaxed">
-            Claude Haiku analyzes 6 months of data and generates observations about cross-category patterns, unusual spending, and actionable suggestions. Statistical trend detection too.
+            Claude analyzes your spending and calculates a health score reflecting your savings rate and financial stability. Discovers behavioral patterns—grocery volatility, spending spikes, subscription creep—and delivers narrative insights ranked by severity. True LLM intelligence, not heuristics.
           </p>
         </div>
 
@@ -159,7 +159,7 @@ import Layout from '../layouts/Layout.astro';
           </div>
           <h3 class="text-sm font-semibold mb-2">Fully Local & Private</h3>
           <p class="text-xs text-zinc-400 leading-relaxed">
-            Everything runs on your machine. SQLite database stored locally. PDF statements never leave your computer. The only external call is to Claude for AI extraction.
+            Everything runs on your machine using your own Anthropic API key. SQLite database stored locally. Your PDF statements and financial data never leave your computer. Only the text you explicitly send to Claude is processed by Anthropic—you control what data is analyzed.
           </p>
         </div>
       </div>
@@ -217,7 +217,7 @@ import Layout from '../layouts/Layout.astro';
       <!-- Insights -->
       <div class="grid md:grid-cols-2 gap-12 items-center">
         <div class="order-2 md:order-1 rounded-xl border border-zinc-800 overflow-hidden">
-          <img src="/screenshots/insights.png" alt="AI insights dashboard with spending observations and statistical analysis" class="w-full" />
+          <img src="/screenshots/insights-enhanced.png" alt="AI insights dashboard showing health score, spending metrics, and behavioral patterns" class="w-full" />
         </div>
         <div class="order-1 md:order-2">
           <p class="text-xs font-medium uppercase tracking-widest text-emerald-400 mb-3">Insights</p>
