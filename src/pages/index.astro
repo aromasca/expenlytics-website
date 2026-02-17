@@ -57,9 +57,9 @@ import Layout from '../layouts/Layout.astro';
         <span class="text-emerald-400">money goes</span>
       </h1>
       <p class="mt-6 text-lg text-zinc-400 max-w-2xl mx-auto leading-relaxed">
-        Import PDF bank statements into your local app using your own Anthropic API key.
-        AI extracts and categorizes every transaction. Detect subscriptions, visualize spending flows, and get actionable insights —
-        all running locally on your machine. Your financial data never leaves.
+        Import PDF bank statements and let AI extract, categorize, and analyze every transaction.
+        Detect subscriptions, visualize spending flows, manage merchants, and get actionable insights —
+        all running locally on your machine with your own API key. Try it instantly with built-in demo data.
       </p>
       <div class="mt-10 flex items-center justify-center gap-4">
         <a
@@ -83,7 +83,7 @@ import Layout from '../layouts/Layout.astro';
     <!-- Hero screenshot -->
     <div class="mx-auto mt-16 max-w-5xl">
       <div class="rounded-xl border border-zinc-800 overflow-hidden shadow-2xl shadow-black/50">
-        <img src="/screenshots/insights-enhanced.png" alt="Expenlytics AI-powered insights dashboard showing health score, spending metrics, and behavioral patterns" class="w-full" />
+        <img src="/screenshots/insights-new.png" alt="Expenlytics AI-powered insights dashboard showing health score, spending metrics, income vs outflow chart, and behavioral pattern insights" class="w-full" />
       </div>
     </div>
 
@@ -109,37 +109,7 @@ import Layout from '../layouts/Layout.astro';
           </div>
           <h3 class="text-sm font-semibold mb-2">PDF Import & AI Extraction</h3>
           <p class="text-xs text-zinc-400 leading-relaxed">
-            Drag-and-drop bank or credit card statement PDFs. Claude extracts every transaction with date, description, amount, and category. Duplicate detection across overlapping statements.
-          </p>
-        </div>
-
-        <div class="rounded-xl border border-zinc-800 bg-zinc-900/50 p-6">
-          <div class="mb-4 flex h-10 w-10 items-center justify-center rounded-lg bg-emerald-500/10">
-            <svg class="h-5 w-5 text-emerald-400" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9.568 3H5.25A2.25 2.25 0 003 5.25v4.318c0 .597.237 1.17.659 1.591l9.581 9.581c.699.699 1.78.872 2.607.33a18.095 18.095 0 005.223-5.223c.542-.827.369-1.908-.33-2.607L11.16 3.66A2.25 2.25 0 009.568 3z"/><path stroke-linecap="round" stroke-linejoin="round" d="M6 6h.008v.008H6V6z"/></svg>
-          </div>
-          <h3 class="text-sm font-semibold mb-2">71 Smart Categories</h3>
-          <p class="text-xs text-zinc-400 leading-relaxed">
-            AI classifies transactions into 71 categories across 16 groups. Searchable combobox for manual edits. Re-classify everything when the taxonomy improves.
-          </p>
-        </div>
-
-        <div class="rounded-xl border border-zinc-800 bg-zinc-900/50 p-6">
-          <div class="mb-4 flex h-10 w-10 items-center justify-center rounded-lg bg-emerald-500/10">
-            <svg class="h-5 w-5 text-emerald-400" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 12c0-1.232-.046-2.453-.138-3.662a4.006 4.006 0 00-3.7-3.7 48.678 48.678 0 00-7.324 0 4.006 4.006 0 00-3.7 3.7c-.017.22-.032.441-.046.662M19.5 12l3-3m-3 3l-3-3m-12 3c0 1.232.046 2.453.138 3.662a4.006 4.006 0 003.7 3.7 48.656 48.656 0 007.324 0 4.006 4.006 0 003.7-3.7c.017-.22.032-.441.046-.662M4.5 12l3 3m-3-3l-3 3"/></svg>
-          </div>
-          <h3 class="text-sm font-semibold mb-2">Subscription Detection</h3>
-          <p class="text-xs text-zinc-400 leading-relaxed">
-            Automatically detects recurring charges by normalized merchant name. See frequency, monthly cost, and yearly totals. Merge duplicates, dismiss false positives.
-          </p>
-        </div>
-
-        <div class="rounded-xl border border-zinc-800 bg-zinc-900/50 p-6">
-          <div class="mb-4 flex h-10 w-10 items-center justify-center rounded-lg bg-emerald-500/10">
-            <svg class="h-5 w-5 text-emerald-400" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 13.125C3 12.504 3.504 12 4.125 12h2.25c.621 0 1.125.504 1.125 1.125v6.75C7.5 20.496 6.996 21 6.375 21h-2.25A1.125 1.125 0 013 19.875v-6.75zM9.75 8.625c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125v11.25c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V8.625zM16.5 4.125c0-.621.504-1.125 1.125-1.125h2.25C20.496 3 21 3.504 21 4.125v15.75c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V4.125z"/></svg>
-          </div>
-          <h3 class="text-sm font-semibold mb-2">Reports & Sankey Diagram</h3>
-          <p class="text-xs text-zinc-400 leading-relaxed">
-            Bar charts, pie charts, and trend lines for spending analysis. A custom Sankey diagram visualizes money flow from income sources through category groups to individual categories.
+            Drag-and-drop bank or credit card statement PDFs. AI extracts every transaction with date, description, amount, type, and category. Local PDF text extraction with LLM fallback for scanned documents. Duplicate detection across overlapping statements.
           </p>
         </div>
 
@@ -149,17 +119,47 @@ import Layout from '../layouts/Layout.astro';
           </div>
           <h3 class="text-sm font-semibold mb-2">AI Spending Insights</h3>
           <p class="text-xs text-zinc-400 leading-relaxed">
-            Claude analyzes your spending and calculates a health score reflecting your savings rate and financial stability. Discovers behavioral patterns—grocery volatility, spending spikes, subscription creep—and delivers narrative insights ranked by severity. True LLM intelligence, not heuristics.
+            AI analyzes months of spending data, calculates a financial health score (0-100), and surfaces behavioral patterns — grocery volatility, spending spikes, subscription creep. Income vs outflow charts and severity-ranked narrative insights.
           </p>
         </div>
 
         <div class="rounded-xl border border-zinc-800 bg-zinc-900/50 p-6">
           <div class="mb-4 flex h-10 w-10 items-center justify-center rounded-lg bg-emerald-500/10">
-            <svg class="h-5 w-5 text-emerald-400" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M16.5 10.5V6.75a4.5 4.5 0 10-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 002.25-2.25v-6.75a2.25 2.25 0 00-2.25-2.25H6.75a2.25 2.25 0 00-2.25 2.25v6.75a2.25 2.25 0 002.25 2.25z"/></svg>
+            <svg class="h-5 w-5 text-emerald-400" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 21v-7.5a.75.75 0 01.75-.75h3a.75.75 0 01.75.75V21m-4.5 0H2.36m11.14 0H18m0 0h3.64m-1.39 0V9.349m-16.5 11.65V9.35m0 0a3.001 3.001 0 003.75-.615A2.993 2.993 0 009.75 9.75c.896 0 1.7-.393 2.25-1.016a2.993 2.993 0 002.25 1.016c.896 0 1.7-.393 2.25-1.016a3.001 3.001 0 003.75.614m-16.5 0a3.004 3.004 0 01-.621-4.72L4.318 3.44A1.5 1.5 0 015.378 3h13.243a1.5 1.5 0 011.06.44l1.19 1.189a3 3 0 01-.621 4.72m-13.5 8.65h3.75a.75.75 0 00.75-.75V13.5a.75.75 0 00-.75-.75H6.75a.75.75 0 00-.75.75v3.15c0 .415.336.75.75.75z"/></svg>
           </div>
-          <h3 class="text-sm font-semibold mb-2">Fully Local & Private</h3>
+          <h3 class="text-sm font-semibold mb-2">Merchant Intelligence</h3>
           <p class="text-xs text-zinc-400 leading-relaxed">
-            Everything runs on your machine using your own Anthropic API key. SQLite database stored locally. Your PDF statements and financial data never leave your computer. Only the text you explicitly send to Claude is processed by Anthropic—you control what data is analyzed.
+            All merchants in one view with transaction counts, totals, and categories. AI-powered merge suggestions detect duplicate merchant names (e.g. "WHOLEFDS MKT" and "Whole Foods"). Merchant classification memory learns your patterns.
+          </p>
+        </div>
+
+        <div class="rounded-xl border border-zinc-800 bg-zinc-900/50 p-6">
+          <div class="mb-4 flex h-10 w-10 items-center justify-center rounded-lg bg-emerald-500/10">
+            <svg class="h-5 w-5 text-emerald-400" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 13.125C3 12.504 3.504 12 4.125 12h2.25c.621 0 1.125.504 1.125 1.125v6.75C7.5 20.496 6.996 21 6.375 21h-2.25A1.125 1.125 0 013 19.875v-6.75zM9.75 8.625c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125v11.25c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V8.625zM16.5 4.125c0-.621.504-1.125 1.125-1.125h2.25C20.496 3 21 3.504 21 4.125v15.75c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V4.125z"/></svg>
+          </div>
+          <h3 class="text-sm font-semibold mb-2">Reports & Sankey Diagram</h3>
+          <p class="text-xs text-zinc-400 leading-relaxed">
+            Summary cards, spending over time, category breakdown pie chart, and a custom Sankey diagram for money flow. Plus savings rate tracking, month-over-month comparisons, and spending trend lines.
+          </p>
+        </div>
+
+        <div class="rounded-xl border border-zinc-800 bg-zinc-900/50 p-6">
+          <div class="mb-4 flex h-10 w-10 items-center justify-center rounded-lg bg-emerald-500/10">
+            <svg class="h-5 w-5 text-emerald-400" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 12c0-1.232-.046-2.453-.138-3.662a4.006 4.006 0 00-3.7-3.7 48.678 48.678 0 00-7.324 0 4.006 4.006 0 00-3.7 3.7c-.017.22-.032.441-.046.662M19.5 12l3-3m-3 3l-3-3m-12 3c0 1.232.046 2.453.138 3.662a4.006 4.006 0 003.7 3.7 48.656 48.656 0 007.324 0 4.006 4.006 0 003.7-3.7c.017-.22.032-.441.046-.662M4.5 12l3 3m-3-3l-3 3"/></svg>
+          </div>
+          <h3 class="text-sm font-semibold mb-2">Subscription Lifecycle</h3>
+          <p class="text-xs text-zinc-400 leading-relaxed">
+            Automatically detects recurring charges by merchant. Track frequency, monthly and yearly costs with trend charts. Mark subscriptions as ended, exclude false positives, and bulk-manage with lifecycle controls.
+          </p>
+        </div>
+
+        <div class="rounded-xl border border-zinc-800 bg-zinc-900/50 p-6">
+          <div class="mb-4 flex h-10 w-10 items-center justify-center rounded-lg bg-emerald-500/10">
+            <svg class="h-5 w-5 text-emerald-400" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9.75 3.104v5.714a2.25 2.25 0 01-.659 1.591L5 14.5M9.75 3.104c-.251.023-.501.05-.75.082m.75-.082a24.301 24.301 0 014.5 0m0 0v5.714c0 .597.237 1.17.659 1.591L19.8 15.3M14.25 3.104c.251.023.501.05.75.082M19.8 15.3l-1.57.393A9.065 9.065 0 0112 15a9.065 9.065 0 00-6.23.693L5 14.5m14.8.8l1.402 1.402c1.232 1.232.65 3.318-1.067 3.611A48.309 48.309 0 0112 21c-2.773 0-5.491-.235-8.135-.687-1.718-.293-2.3-2.379-1.067-3.61L5 14.5"/></svg>
+          </div>
+          <h3 class="text-sm font-semibold mb-2">Try Instantly with Demo Data</h3>
+          <p class="text-xs text-zinc-400 leading-relaxed">
+            Load ~500 realistic sample transactions with one click to explore every feature — no PDF uploads or API key needed. Multi-provider LLM support lets you choose between Anthropic (Claude) and OpenAI (GPT) per task.
           </p>
         </div>
       </div>
@@ -169,37 +169,69 @@ import Layout from '../layouts/Layout.astro';
   <!-- Screenshot showcase -->
   <section class="py-24 px-6 border-t border-zinc-800/50">
     <div class="mx-auto max-w-6xl space-y-24">
-      <!-- Transactions -->
+      <!-- Insights -->
       <div class="grid md:grid-cols-2 gap-12 items-center">
         <div>
-          <p class="text-xs font-medium uppercase tracking-widest text-emerald-400 mb-3">Transaction Management</p>
-          <h3 class="text-2xl font-bold tracking-tight mb-4">Every transaction, organized</h3>
+          <p class="text-xs font-medium uppercase tracking-widest text-emerald-400 mb-3">Insights</p>
+          <h3 class="text-2xl font-bold tracking-tight mb-4">AI-powered spending analysis</h3>
           <p class="text-sm text-zinc-400 leading-relaxed">
-            Filter by type, category, date range, or document. Inline category editing with a searchable combobox.
-            Bulk select and delete. Pagination for large datasets. Search across all descriptions.
+            A financial health score (0-100) with a plain-English summary. Key metrics like savings rate, fixed costs ratio, and discretionary creep at a glance.
+            Income vs outflow comparison chart. AI-generated insights detect behavioral shifts, spending leaks, and trends — ranked by severity.
           </p>
         </div>
         <div class="rounded-xl border border-zinc-800 overflow-hidden">
-          <img src="/screenshots/transactions.png" alt="Transactions page with filters, search, and inline category editing" class="w-full" />
+          <img src="/screenshots/insights-new.png" alt="AI insights dashboard showing health score of 66, spending metrics, income vs outflow chart, and behavioral pattern cards" class="w-full" />
+        </div>
+      </div>
+
+      <!-- Transactions -->
+      <div class="grid md:grid-cols-2 gap-12 items-center">
+        <div class="order-2 md:order-1 rounded-xl border border-zinc-800 overflow-hidden">
+          <img src="/screenshots/transactions-new.png" alt="Transactions page with filters, inline category editing, sortable columns, and bulk actions" class="w-full" />
+        </div>
+        <div class="order-1 md:order-2">
+          <p class="text-xs font-medium uppercase tracking-widest text-emerald-400 mb-3">Transaction Management</p>
+          <h3 class="text-2xl font-bold tracking-tight mb-4">Every transaction, organized</h3>
+          <p class="text-sm text-zinc-400 leading-relaxed">
+            Filter by type, category, date range, or document. Sortable columns, inline editing for category, type, and transaction class.
+            Bulk select and delete, CSV export, and pagination. 71 categories across 15 groups with a searchable combobox.
+          </p>
         </div>
       </div>
 
       <!-- Reports -->
       <div class="grid md:grid-cols-2 gap-12 items-center">
-        <div class="order-2 md:order-1 rounded-xl border border-zinc-800 overflow-hidden">
-          <img src="/screenshots/reports high level.png" alt="Reports dashboard with spending charts, pie chart, and Sankey diagram" class="w-full" />
-        </div>
-        <div class="order-1 md:order-2">
+        <div>
           <p class="text-xs font-medium uppercase tracking-widest text-emerald-400 mb-3">Reports</p>
           <h3 class="text-2xl font-bold tracking-tight mb-4">Charts that tell the story</h3>
           <p class="text-sm text-zinc-400 leading-relaxed">
             Summary cards for total spent, income, and averages. Spending over time bar charts,
-            category breakdown pie charts, and spending trend lines comparing debits vs credits.
+            category breakdown pie chart, and a Sankey diagram for money flow. Plus spending trend lines,
+            savings rate tracking, and month-over-month change comparison.
+          </p>
+        </div>
+        <div class="rounded-xl border border-zinc-800 overflow-hidden">
+          <img src="/screenshots/reports-new.png" alt="Reports dashboard with summary cards, spending over time chart, category pie chart, and Sankey diagram" class="w-full" />
+        </div>
+      </div>
+
+      <!-- Merchants -->
+      <div class="grid md:grid-cols-2 gap-12 items-center">
+        <div class="order-2 md:order-1 rounded-xl border border-zinc-800 overflow-hidden">
+          <img src="/screenshots/merchants-new.png" alt="Merchants page showing all merchants with transaction counts, totals, categories, and AI merge suggestions" class="w-full" />
+        </div>
+        <div class="order-1 md:order-2">
+          <p class="text-xs font-medium uppercase tracking-widest text-emerald-400 mb-3">Merchants</p>
+          <h3 class="text-2xl font-bold tracking-tight mb-4">Know who you're paying</h3>
+          <p class="text-sm text-zinc-400 leading-relaxed">
+            Every merchant in one sortable table with transaction counts, total spend, categories, and date ranges.
+            AI-powered merge suggestions detect duplicates like "WHOLEFDS MKT 10042" and "Whole Foods Market".
+            Merchant classification memory learns your overrides and applies them automatically.
           </p>
         </div>
       </div>
 
-      <!-- Sankey -->
+      <!-- Sankey / Money Flow -->
       <div class="grid md:grid-cols-2 gap-12 items-center">
         <div>
           <p class="text-xs font-medium uppercase tracking-widest text-emerald-400 mb-3">Money Flow</p>
@@ -210,47 +242,23 @@ import Layout from '../layouts/Layout.astro';
           </p>
         </div>
         <div class="rounded-xl border border-zinc-800 overflow-hidden">
-          <img src="/screenshots/money flow.png" alt="Sankey diagram showing money flow from income through category groups to categories" class="w-full" />
-        </div>
-      </div>
-
-      <!-- Insights -->
-      <div class="grid md:grid-cols-2 gap-12 items-center">
-        <div class="order-2 md:order-1 rounded-xl border border-zinc-800 overflow-hidden">
-          <img src="/screenshots/insights-enhanced.png" alt="AI insights dashboard showing health score, spending metrics, and behavioral patterns" class="w-full" />
-        </div>
-        <div class="order-1 md:order-2">
-          <p class="text-xs font-medium uppercase tracking-widest text-emerald-400 mb-3">Insights</p>
-          <h3 class="text-2xl font-bold tracking-tight mb-4">AI-powered spending analysis</h3>
-          <p class="text-sm text-zinc-400 leading-relaxed">
-            Claude analyzes months of spending data and surfaces patterns you might miss.
-            Category trends, lifestyle inflation, recurring charge growth, and spending shifts —
-            ranked by severity and recency.
-          </p>
+          <img src="/screenshots/reports-bottom-new.png" alt="Money Flow Sankey diagram, Spending Trend with savings rate chart, and month-over-month comparison" class="w-full" />
         </div>
       </div>
 
       <!-- Recurring -->
       <div class="grid md:grid-cols-2 gap-12 items-center">
-        <div>
+        <div class="order-2 md:order-1 rounded-xl border border-zinc-800 overflow-hidden">
+          <img src="/screenshots/recurring-new.png" alt="Recurring charges page showing detected subscriptions with cost trend chart, lifecycle management, and category grouping" class="w-full" />
+        </div>
+        <div class="order-1 md:order-2">
           <p class="text-xs font-medium uppercase tracking-widest text-emerald-400 mb-3">Subscriptions</p>
           <h3 class="text-2xl font-bold tracking-tight mb-4">Track every recurring charge</h3>
           <p class="text-sm text-zinc-400 leading-relaxed">
             Automatically detects subscriptions and recurring payments by normalized merchant name.
-            See frequency, average cost, monthly and yearly totals. Merge duplicates, dismiss false positives.
+            See frequency, average cost, monthly and yearly totals with cost trend charts. Full lifecycle management — mark ended, exclude transactions, bulk actions with undo.
           </p>
         </div>
-        <div class="rounded-xl border border-zinc-800 overflow-hidden">
-          <img src="/screenshots/recurring transactions.png" alt="Recurring charges page showing detected subscriptions with frequency and cost" class="w-full" />
-        </div>
-      </div>
-
-      <!-- Spending trend -->
-      <div class="mx-auto max-w-5xl">
-        <div class="rounded-xl border border-zinc-800 overflow-hidden">
-          <img src="/screenshots/reports bottom.png" alt="Spending trend chart comparing income vs spending over time, and top transactions table" class="w-full" />
-        </div>
-        <p class="text-center text-xs text-zinc-500 mt-4">Spending trends and top transactions</p>
       </div>
     </div>
   </section>
@@ -280,13 +288,15 @@ import Layout from '../layouts/Layout.astro';
         <div class="flex gap-6">
           <div class="flex h-8 w-8 shrink-0 items-center justify-center rounded-full border border-zinc-700 text-xs font-medium text-zinc-400">2</div>
           <div>
-            <h3 class="text-sm font-semibold mb-1">Add your Anthropic API key</h3>
+            <h3 class="text-sm font-semibold mb-1">Add your API key (optional for demo mode)</h3>
             <div class="rounded-lg bg-zinc-900 border border-zinc-800 p-4 mt-3">
               <code class="text-xs text-zinc-300">
-                <span class="text-zinc-500">$</span> echo 'ANTHROPIC_API_KEY=sk-ant-...' > .env.local
+                <span class="text-zinc-500">$</span> echo 'ANTHROPIC_API_KEY=sk-ant-...' > .env.local<br/>
+                <span class="text-zinc-500"># or</span><br/>
+                <span class="text-zinc-500">$</span> echo 'OPENAI_API_KEY=sk-...' > .env.local
               </code>
             </div>
-            <p class="text-xs text-zinc-500 mt-2">Used for PDF extraction, categorization, and insights. Get a key at <a href="https://console.anthropic.com/" target="_blank" rel="noopener" class="text-emerald-400 hover:underline">console.anthropic.com</a>.</p>
+            <p class="text-xs text-zinc-500 mt-2">Supports both <a href="https://console.anthropic.com/" target="_blank" rel="noopener" class="text-emerald-400 hover:underline">Anthropic</a> and <a href="https://platform.openai.com/" target="_blank" rel="noopener" class="text-emerald-400 hover:underline">OpenAI</a>. Choose per task in Settings. Or skip this step and use demo data to explore first.</p>
           </div>
         </div>
 
@@ -299,7 +309,7 @@ import Layout from '../layouts/Layout.astro';
                 <span class="text-zinc-500">$</span> npm run dev
               </code>
             </div>
-            <p class="text-xs text-zinc-500 mt-2">Open <code class="text-zinc-400">localhost:3000</code> and upload your first PDF statement.</p>
+            <p class="text-xs text-zinc-500 mt-2">Open <code class="text-zinc-400">localhost:3000</code>. Load demo data from Settings to explore instantly, or upload your first PDF statement.</p>
           </div>
         </div>
       </div>
@@ -321,7 +331,7 @@ import Layout from '../layouts/Layout.astro';
           { name: 'TypeScript', desc: 'Strict mode' },
           { name: 'Tailwind v4', desc: 'Utility CSS' },
           { name: 'SQLite', desc: 'better-sqlite3' },
-          { name: 'Claude AI', desc: 'Anthropic SDK' },
+          { name: 'Claude & GPT', desc: 'Multi-provider AI' },
           { name: 'Recharts', desc: 'Charts' },
           { name: 'd3-sankey', desc: 'Flow diagrams' },
         ].map(({ name, desc }) => (
@@ -339,7 +349,7 @@ import Layout from '../layouts/Layout.astro';
     <div class="mx-auto max-w-2xl text-center">
       <h2 class="text-3xl font-bold tracking-tight">Start tracking your spending</h2>
       <p class="mt-4 text-sm text-zinc-400">
-        Open source, local-first, AI-powered. Clone the repo and upload your first statement.
+        Open source, local-first, AI-powered. Load demo data to explore instantly — no API key required.
       </p>
       <a
         href="https://github.com/aromasca/expenlytics"
