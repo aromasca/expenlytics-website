@@ -58,7 +58,7 @@ import Layout from '../layouts/Layout.astro';
       </h1>
       <p class="mt-6 text-lg text-zinc-400 max-w-2xl mx-auto leading-relaxed">
         Import PDF bank statements and let AI extract, categorize, and analyze every transaction.
-        Detect subscriptions, visualize spending flows, manage merchants, and get actionable insights —
+        Track commitments, detect anomalies, visualize spending flows, manage merchants and accounts, and get actionable insights —
         all running locally on your machine with your own API key. Try it instantly with built-in demo data.
       </p>
       <div class="mt-10 flex items-center justify-center gap-4">
@@ -101,7 +101,7 @@ import Layout from '../layouts/Layout.astro';
         <h2 class="text-3xl font-bold tracking-tight">Everything you need to understand your spending</h2>
       </div>
 
-      <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+      <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
         <!-- Feature cards -->
         <div class="rounded-xl border border-zinc-800 bg-zinc-900/50 p-6">
           <div class="mb-4 flex h-10 w-10 items-center justify-center rounded-lg bg-emerald-500/10">
@@ -129,7 +129,7 @@ import Layout from '../layouts/Layout.astro';
           </div>
           <h3 class="text-sm font-semibold mb-2">Merchant Intelligence</h3>
           <p class="text-xs text-zinc-400 leading-relaxed">
-            All merchants in one view with transaction counts, totals, and categories. AI-powered merge suggestions detect duplicate merchant names (e.g. "WHOLEFDS MKT" and "Whole Foods"). Merchant classification memory learns your patterns.
+            All merchants in one view with transaction counts, totals, and categories. AI-powered merge suggestions detect duplicate merchant names (e.g. "WHOLEFDS MKT" and "Whole Foods"). Split incorrectly grouped merchants apart. Merchant classification memory learns your patterns.
           </p>
         </div>
 
@@ -147,9 +147,9 @@ import Layout from '../layouts/Layout.astro';
           <div class="mb-4 flex h-10 w-10 items-center justify-center rounded-lg bg-emerald-500/10">
             <svg class="h-5 w-5 text-emerald-400" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 12c0-1.232-.046-2.453-.138-3.662a4.006 4.006 0 00-3.7-3.7 48.678 48.678 0 00-7.324 0 4.006 4.006 0 00-3.7 3.7c-.017.22-.032.441-.046.662M19.5 12l3-3m-3 3l-3-3m-12 3c0 1.232.046 2.453.138 3.662a4.006 4.006 0 003.7 3.7 48.656 48.656 0 007.324 0 4.006 4.006 0 003.7-3.7c.017-.22.032-.441.046-.662M4.5 12l3 3m-3-3l-3 3"/></svg>
           </div>
-          <h3 class="text-sm font-semibold mb-2">Subscription Lifecycle</h3>
+          <h3 class="text-sm font-semibold mb-2">Commitment Tracking</h3>
           <p class="text-xs text-zinc-400 leading-relaxed">
-            Automatically detects recurring charges by merchant. Track frequency, monthly and yearly costs with trend charts. Mark subscriptions as ended, exclude false positives, and bulk-manage with lifecycle controls.
+            Automatically detects recurring charges by merchant. Track frequency, monthly and yearly costs with trend charts. Override detected amounts, mark commitments as ended or paused, and bulk-manage with lifecycle controls.
           </p>
         </div>
 
@@ -160,6 +160,26 @@ import Layout from '../layouts/Layout.astro';
           <h3 class="text-sm font-semibold mb-2">Try Instantly with Demo Data</h3>
           <p class="text-xs text-zinc-400 leading-relaxed">
             Load ~500 realistic sample transactions with one click to explore every feature — no PDF uploads or API key needed. Multi-provider LLM support lets you choose between Anthropic (Claude) and OpenAI (GPT) per task.
+          </p>
+        </div>
+
+        <div class="rounded-xl border border-zinc-800 bg-zinc-900/50 p-6">
+          <div class="mb-4 flex h-10 w-10 items-center justify-center rounded-lg bg-emerald-500/10">
+            <svg class="h-5 w-5 text-emerald-400" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 8.25h19.5M2.25 9h19.5m-16.5 5.25h6m-6 2.25h3m-3.75 3h15a2.25 2.25 0 002.25-2.25V6.75A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25v10.5A2.25 2.25 0 004.5 19.5z"/></svg>
+          </div>
+          <h3 class="text-sm font-semibold mb-2">Account Detection</h3>
+          <p class="text-xs text-zinc-400 leading-relaxed">
+            AI auto-detects which bank account each uploaded statement belongs to. Visual completeness grid shows coverage gaps month-by-month. Merge or rename detected accounts as needed.
+          </p>
+        </div>
+
+        <div class="rounded-xl border border-zinc-800 bg-zinc-900/50 p-6">
+          <div class="mb-4 flex h-10 w-10 items-center justify-center rounded-lg bg-emerald-500/10">
+            <svg class="h-5 w-5 text-emerald-400" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126zM12 15.75h.007v.008H12v-.008z"/></svg>
+          </div>
+          <h3 class="text-sm font-semibold mb-2">Transaction Health</h3>
+          <p class="text-xs text-zinc-400 leading-relaxed">
+            Automatically flags duplicates, category mismatches, and suspicious transactions. Grouped by merchant for easy review. Bulk-resolve flagged items and reassign categories directly from the flagged view.
           </p>
         </div>
       </div>
@@ -175,12 +195,12 @@ import Layout from '../layouts/Layout.astro';
           <p class="text-xs font-medium uppercase tracking-widest text-emerald-400 mb-3">Insights</p>
           <h3 class="text-2xl font-bold tracking-tight mb-4">AI-powered spending analysis</h3>
           <p class="text-sm text-zinc-400 leading-relaxed">
-            A financial health score (0-100) with a plain-English summary. Key metrics like savings rate, fixed costs ratio, and discretionary creep at a glance.
-            Income vs outflow comparison chart. AI-generated insights detect behavioral shifts, spending leaks, and trends — ranked by severity.
+            An animated financial health score gauge (0-100) with a plain-English summary. Key metrics like committed baseline, worst cash-flow month, and discretionary spikes at a glance.
+            Income vs outflow comparison chart. Dismissable AI-generated insights detect anomalies, behavioral shifts, and spending drift — ranked by severity with expandable detail.
           </p>
         </div>
         <div class="rounded-xl border border-zinc-800 overflow-hidden">
-          <img src="/screenshots/insights-new.png" alt="AI insights dashboard showing health score of 66, spending metrics, income vs outflow chart, and behavioral pattern cards" class="w-full" />
+          <img src="/screenshots/insights-new.png" alt="AI insights dashboard showing animated health score gauge, spending metrics, income vs outflow chart, and dismissable behavioral insight cards" class="w-full" />
         </div>
       </div>
 
@@ -194,7 +214,7 @@ import Layout from '../layouts/Layout.astro';
           <h3 class="text-2xl font-bold tracking-tight mb-4">Every transaction, organized</h3>
           <p class="text-sm text-zinc-400 leading-relaxed">
             Filter by type, category, date range, or document. Sortable columns, inline editing for category, type, and transaction class.
-            Bulk select and delete, CSV export, and pagination. 71 categories across 15 groups with a searchable combobox.
+            Bulk select and delete, CSV export, and pagination. Built-in flagged view surfaces duplicates, category mismatches, and suspicious charges for quick resolution.
           </p>
         </div>
       </div>
@@ -225,8 +245,8 @@ import Layout from '../layouts/Layout.astro';
           <h3 class="text-2xl font-bold tracking-tight mb-4">Know who you're paying</h3>
           <p class="text-sm text-zinc-400 leading-relaxed">
             Every merchant in one sortable table with transaction counts, total spend, categories, and date ranges.
-            AI-powered merge suggestions detect duplicates like "WHOLEFDS MKT 10042" and "Whole Foods Market".
-            Merchant classification memory learns your overrides and applies them automatically.
+            AI-powered merge suggestions detect duplicates like "WHOLEFDS MKT 10042" and "Whole Foods Market". Split incorrectly grouped merchants apart.
+            Expandable rows show description-level sub-groups with individual transaction drill-down.
           </p>
         </div>
       </div>
@@ -249,14 +269,14 @@ import Layout from '../layouts/Layout.astro';
       <!-- Recurring -->
       <div class="grid md:grid-cols-2 gap-12 items-center">
         <div class="order-2 md:order-1 rounded-xl border border-zinc-800 overflow-hidden">
-          <img src="/screenshots/recurring-new.png" alt="Recurring charges page showing detected subscriptions with cost trend chart, lifecycle management, and category grouping" class="w-full" />
+          <img src="/screenshots/recurring-new.png" alt="Commitments page showing detected recurring charges with cost trend chart, lifecycle management, and category grouping" class="w-full" />
         </div>
         <div class="order-1 md:order-2">
-          <p class="text-xs font-medium uppercase tracking-widest text-emerald-400 mb-3">Subscriptions</p>
+          <p class="text-xs font-medium uppercase tracking-widest text-emerald-400 mb-3">Commitments</p>
           <h3 class="text-2xl font-bold tracking-tight mb-4">Track every recurring charge</h3>
           <p class="text-sm text-zinc-400 leading-relaxed">
-            Automatically detects subscriptions and recurring payments by normalized merchant name.
-            See frequency, average cost, monthly and yearly totals with cost trend charts. Full lifecycle management — mark ended, exclude transactions, bulk actions with undo.
+            Automatically detects recurring commitments by normalized merchant name.
+            See frequency, average cost, monthly and yearly totals with cost trend charts. Override detected amounts, mark ended or paused, and bulk-manage with lifecycle controls.
           </p>
         </div>
       </div>
