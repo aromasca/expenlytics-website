@@ -57,9 +57,8 @@ import Layout from '../layouts/Layout.astro';
         <span class="text-emerald-400">money goes</span>
       </h1>
       <p class="mt-6 text-lg text-zinc-400 max-w-2xl mx-auto leading-relaxed">
-        Import PDF bank statements and let AI extract, categorize, and analyze every transaction.
-        Track commitments, detect anomalies, visualize spending flows, manage merchants and accounts, and get actionable insights —
-        all running locally on your machine with your own API key. Try it instantly with built-in demo data.
+        Drop in your bank statement PDFs. AI pulls out every transaction, sorts it, and shows you
+        what's actually happening with your money — all on your machine, nothing uploaded anywhere.
       </p>
       <div class="mt-10 flex items-center justify-center gap-4">
         <a
@@ -107,9 +106,9 @@ import Layout from '../layouts/Layout.astro';
           <div class="mb-4 flex h-10 w-10 items-center justify-center rounded-lg bg-emerald-500/10">
             <svg class="h-5 w-5 text-emerald-400" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m6.75 12H9.75m3 0H9.75m3 0v-3m-6-6H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z"/></svg>
           </div>
-          <h3 class="text-sm font-semibold mb-2">PDF Import & AI Extraction</h3>
+          <h3 class="text-sm font-semibold mb-2">PDF Import</h3>
           <p class="text-xs text-zinc-400 leading-relaxed">
-            Drag-and-drop bank or credit card statement PDFs. AI extracts every transaction with date, description, amount, type, and category. Local PDF text extraction with LLM fallback for scanned documents. Duplicate detection across overlapping statements.
+            Drag in a bank statement PDF. AI reads it, pulls out every transaction, and categorizes them automatically. Even handles scanned documents and catches duplicates if you upload overlapping months.
           </p>
         </div>
 
@@ -117,9 +116,9 @@ import Layout from '../layouts/Layout.astro';
           <div class="mb-4 flex h-10 w-10 items-center justify-center rounded-lg bg-emerald-500/10">
             <svg class="h-5 w-5 text-emerald-400" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 18v-5.25m0 0a6.01 6.01 0 001.5-.189m-1.5.189a6.01 6.01 0 01-1.5-.189m3.75 7.478a12.06 12.06 0 01-4.5 0m3.75 2.383a14.406 14.406 0 01-3 0M14.25 18v-.192c0-.983.658-1.823 1.508-2.316a7.5 7.5 0 10-7.517 0c.85.493 1.509 1.333 1.509 2.316V18"/></svg>
           </div>
-          <h3 class="text-sm font-semibold mb-2">AI Spending Insights</h3>
+          <h3 class="text-sm font-semibold mb-2">AI Insights</h3>
           <p class="text-xs text-zinc-400 leading-relaxed">
-            AI analyzes months of spending data, calculates a financial health score (0-100), and surfaces behavioral patterns — grocery volatility, spending spikes, subscription creep. Income vs outflow charts and severity-ranked narrative insights.
+            Get a plain-English breakdown of your spending habits. AI spots the stuff you'd miss — subscriptions creeping up, unusual spikes, months where you spent way more than normal. Plus a health score so you know where you stand.
           </p>
         </div>
 
@@ -127,9 +126,9 @@ import Layout from '../layouts/Layout.astro';
           <div class="mb-4 flex h-10 w-10 items-center justify-center rounded-lg bg-emerald-500/10">
             <svg class="h-5 w-5 text-emerald-400" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 21v-7.5a.75.75 0 01.75-.75h3a.75.75 0 01.75.75V21m-4.5 0H2.36m11.14 0H18m0 0h3.64m-1.39 0V9.349m-16.5 11.65V9.35m0 0a3.001 3.001 0 003.75-.615A2.993 2.993 0 009.75 9.75c.896 0 1.7-.393 2.25-1.016a2.993 2.993 0 002.25 1.016c.896 0 1.7-.393 2.25-1.016a3.001 3.001 0 003.75.614m-16.5 0a3.004 3.004 0 01-.621-4.72L4.318 3.44A1.5 1.5 0 015.378 3h13.243a1.5 1.5 0 011.06.44l1.19 1.189a3 3 0 01-.621 4.72m-13.5 8.65h3.75a.75.75 0 00.75-.75V13.5a.75.75 0 00-.75-.75H6.75a.75.75 0 00-.75.75v3.15c0 .415.336.75.75.75z"/></svg>
           </div>
-          <h3 class="text-sm font-semibold mb-2">Merchant Intelligence</h3>
+          <h3 class="text-sm font-semibold mb-2">Merchant Cleanup</h3>
           <p class="text-xs text-zinc-400 leading-relaxed">
-            All merchants in one view with transaction counts, totals, and categories. AI-powered merge suggestions detect duplicate merchant names (e.g. "WHOLEFDS MKT" and "Whole Foods"). Split incorrectly grouped merchants apart. Merchant classification memory learns your patterns.
+            Bank statements are messy — "WHOLEFDS MKT 10042" and "Whole Foods" are the same place. AI suggests merges so your data actually makes sense. See exactly how much you spend at each merchant.
           </p>
         </div>
 
@@ -137,9 +136,9 @@ import Layout from '../layouts/Layout.astro';
           <div class="mb-4 flex h-10 w-10 items-center justify-center rounded-lg bg-emerald-500/10">
             <svg class="h-5 w-5 text-emerald-400" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 13.125C3 12.504 3.504 12 4.125 12h2.25c.621 0 1.125.504 1.125 1.125v6.75C7.5 20.496 6.996 21 6.375 21h-2.25A1.125 1.125 0 013 19.875v-6.75zM9.75 8.625c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125v11.25c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V8.625zM16.5 4.125c0-.621.504-1.125 1.125-1.125h2.25C20.496 3 21 3.504 21 4.125v15.75c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V4.125z"/></svg>
           </div>
-          <h3 class="text-sm font-semibold mb-2">Reports & Sankey Diagram</h3>
+          <h3 class="text-sm font-semibold mb-2">Visual Reports</h3>
           <p class="text-xs text-zinc-400 leading-relaxed">
-            Summary cards, spending over time, category breakdown pie chart, and a custom Sankey diagram for money flow. Plus savings rate tracking, month-over-month comparisons, and spending trend lines.
+            See your spending as charts, not spreadsheets. Where your money goes each month, how categories compare, your savings rate over time, and a flow diagram that maps every dollar from income to category.
           </p>
         </div>
 
@@ -147,9 +146,9 @@ import Layout from '../layouts/Layout.astro';
           <div class="mb-4 flex h-10 w-10 items-center justify-center rounded-lg bg-emerald-500/10">
             <svg class="h-5 w-5 text-emerald-400" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 12c0-1.232-.046-2.453-.138-3.662a4.006 4.006 0 00-3.7-3.7 48.678 48.678 0 00-7.324 0 4.006 4.006 0 00-3.7 3.7c-.017.22-.032.441-.046.662M19.5 12l3-3m-3 3l-3-3m-12 3c0 1.232.046 2.453.138 3.662a4.006 4.006 0 003.7 3.7 48.656 48.656 0 007.324 0 4.006 4.006 0 003.7-3.7c.017-.22.032-.441.046-.662M4.5 12l3 3m-3-3l-3 3"/></svg>
           </div>
-          <h3 class="text-sm font-semibold mb-2">Commitment Tracking</h3>
+          <h3 class="text-sm font-semibold mb-2">Subscription Tracking</h3>
           <p class="text-xs text-zinc-400 leading-relaxed">
-            Automatically detects recurring charges by merchant. Track frequency, monthly and yearly costs with trend charts. Override detected amounts, mark commitments as ended or paused, and bulk-manage with lifecycle controls.
+            Automatically finds your recurring charges — Netflix, gym, insurance, all of it. Shows you what you're paying monthly and yearly so you can spot the ones you forgot about.
           </p>
         </div>
 
@@ -157,9 +156,9 @@ import Layout from '../layouts/Layout.astro';
           <div class="mb-4 flex h-10 w-10 items-center justify-center rounded-lg bg-emerald-500/10">
             <svg class="h-5 w-5 text-emerald-400" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9.75 3.104v5.714a2.25 2.25 0 01-.659 1.591L5 14.5M9.75 3.104c-.251.023-.501.05-.75.082m.75-.082a24.301 24.301 0 014.5 0m0 0v5.714c0 .597.237 1.17.659 1.591L19.8 15.3M14.25 3.104c.251.023.501.05.75.082M19.8 15.3l-1.57.393A9.065 9.065 0 0112 15a9.065 9.065 0 00-6.23.693L5 14.5m14.8.8l1.402 1.402c1.232 1.232.65 3.318-1.067 3.611A48.309 48.309 0 0112 21c-2.773 0-5.491-.235-8.135-.687-1.718-.293-2.3-2.379-1.067-3.61L5 14.5"/></svg>
           </div>
-          <h3 class="text-sm font-semibold mb-2">Try Instantly with Demo Data</h3>
+          <h3 class="text-sm font-semibold mb-2">Try It in 30 Seconds</h3>
           <p class="text-xs text-zinc-400 leading-relaxed">
-            Load ~500 realistic sample transactions with one click to explore every feature — no PDF uploads or API key needed. Multi-provider LLM support lets you choose between Anthropic (Claude) and OpenAI (GPT) per task.
+            One click loads 500 realistic sample transactions so you can explore everything without uploading anything or setting up an API key. Works with both Claude and GPT when you're ready.
           </p>
         </div>
 
@@ -167,9 +166,9 @@ import Layout from '../layouts/Layout.astro';
           <div class="mb-4 flex h-10 w-10 items-center justify-center rounded-lg bg-emerald-500/10">
             <svg class="h-5 w-5 text-emerald-400" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 8.25h19.5M2.25 9h19.5m-16.5 5.25h6m-6 2.25h3m-3.75 3h15a2.25 2.25 0 002.25-2.25V6.75A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25v10.5A2.25 2.25 0 004.5 19.5z"/></svg>
           </div>
-          <h3 class="text-sm font-semibold mb-2">Account Detection</h3>
+          <h3 class="text-sm font-semibold mb-2">Multi-Account</h3>
           <p class="text-xs text-zinc-400 leading-relaxed">
-            AI auto-detects which bank account each uploaded statement belongs to. Visual completeness grid shows coverage gaps month-by-month. Merge or rename detected accounts as needed.
+            Upload statements from different banks and cards — AI figures out which account each one belongs to. See a coverage map so you know if any months are missing.
           </p>
         </div>
 
@@ -177,9 +176,9 @@ import Layout from '../layouts/Layout.astro';
           <div class="mb-4 flex h-10 w-10 items-center justify-center rounded-lg bg-emerald-500/10">
             <svg class="h-5 w-5 text-emerald-400" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126zM12 15.75h.007v.008H12v-.008z"/></svg>
           </div>
-          <h3 class="text-sm font-semibold mb-2">Transaction Health</h3>
+          <h3 class="text-sm font-semibold mb-2">Data Cleanup</h3>
           <p class="text-xs text-zinc-400 leading-relaxed">
-            Automatically flags duplicates, category mismatches, and suspicious transactions. Grouped by merchant for easy review. Bulk-resolve flagged items and reassign categories directly from the flagged view.
+            Automatically catches duplicates, miscategorized transactions, and anything that looks off. Review and fix them in bulk so your numbers are actually trustworthy.
           </p>
         </div>
       </div>
@@ -193,10 +192,9 @@ import Layout from '../layouts/Layout.astro';
       <div class="grid md:grid-cols-2 gap-12 items-center">
         <div>
           <p class="text-xs font-medium uppercase tracking-widest text-emerald-400 mb-3">Insights</p>
-          <h3 class="text-2xl font-bold tracking-tight mb-4">AI-powered spending analysis</h3>
+          <h3 class="text-2xl font-bold tracking-tight mb-4">Your money, explained in plain English</h3>
           <p class="text-sm text-zinc-400 leading-relaxed">
-            An animated financial health score gauge (0-100) with a plain-English summary. Key metrics like committed baseline, worst cash-flow month, and discretionary spikes at a glance.
-            Income vs outflow comparison chart. Dismissable AI-generated insights detect anomalies, behavioral shifts, and spending drift — ranked by severity with expandable detail.
+            A health score tells you how you're doing at a glance. Below that, AI writes out what it found — spending spikes, habit changes, categories growing faster than they should. No jargon, just clear observations you can act on.
           </p>
         </div>
         <div class="rounded-xl border border-zinc-800 overflow-hidden">
@@ -211,10 +209,9 @@ import Layout from '../layouts/Layout.astro';
         </div>
         <div class="order-1 md:order-2">
           <p class="text-xs font-medium uppercase tracking-widest text-emerald-400 mb-3">Transaction Management</p>
-          <h3 class="text-2xl font-bold tracking-tight mb-4">Every transaction, organized</h3>
+          <h3 class="text-2xl font-bold tracking-tight mb-4">Every transaction, searchable and editable</h3>
           <p class="text-sm text-zinc-400 leading-relaxed">
-            Filter by type, category, date range, or document. Sortable columns, inline editing for category, type, and transaction class.
-            Bulk select and delete, CSV export, and pagination. Built-in flagged view surfaces duplicates, category mismatches, and suspicious charges for quick resolution.
+            Filter, sort, and fix anything. Recategorize transactions inline, clean up flagged items in bulk, and export to CSV when you need the raw data. It's the spreadsheet view you wish your bank gave you.
           </p>
         </div>
       </div>
@@ -223,11 +220,9 @@ import Layout from '../layouts/Layout.astro';
       <div class="grid md:grid-cols-2 gap-12 items-center">
         <div>
           <p class="text-xs font-medium uppercase tracking-widest text-emerald-400 mb-3">Reports</p>
-          <h3 class="text-2xl font-bold tracking-tight mb-4">Charts that tell the story</h3>
+          <h3 class="text-2xl font-bold tracking-tight mb-4">The big picture, at a glance</h3>
           <p class="text-sm text-zinc-400 leading-relaxed">
-            Summary cards for total spent, income, and averages. Spending over time bar charts,
-            category breakdown pie chart, and a Sankey diagram for money flow. Plus spending trend lines,
-            savings rate tracking, and month-over-month change comparison.
+            How much you spent, how much you saved, where it all went. Monthly trends, category breakdowns, and month-over-month comparisons so you can see if things are getting better or worse.
           </p>
         </div>
         <div class="rounded-xl border border-zinc-800 overflow-hidden">
@@ -244,9 +239,7 @@ import Layout from '../layouts/Layout.astro';
           <p class="text-xs font-medium uppercase tracking-widest text-emerald-400 mb-3">Merchants</p>
           <h3 class="text-2xl font-bold tracking-tight mb-4">Know who you're paying</h3>
           <p class="text-sm text-zinc-400 leading-relaxed">
-            Every merchant in one sortable table with transaction counts, total spend, categories, and date ranges.
-            AI-powered merge suggestions detect duplicates like "WHOLEFDS MKT 10042" and "Whole Foods Market". Split incorrectly grouped merchants apart.
-            Expandable rows show description-level sub-groups with individual transaction drill-down.
+            See every merchant ranked by how much you spend there. AI cleans up the messy names banks use so duplicates get merged. Drill into any merchant to see individual transactions.
           </p>
         </div>
       </div>
@@ -255,10 +248,9 @@ import Layout from '../layouts/Layout.astro';
       <div class="grid md:grid-cols-2 gap-12 items-center">
         <div>
           <p class="text-xs font-medium uppercase tracking-widest text-emerald-400 mb-3">Money Flow</p>
-          <h3 class="text-2xl font-bold tracking-tight mb-4">See where every dollar goes</h3>
+          <h3 class="text-2xl font-bold tracking-tight mb-4">Follow the money</h3>
           <p class="text-sm text-zinc-400 leading-relaxed">
-            A custom Sankey diagram traces income from sources through category groups to individual categories.
-            Net savings are shown as a separate node so you can see the full picture at a glance.
+            A flow diagram that maps your income to every category it ends up in. You can literally trace each dollar from paycheck to groceries, rent, subscriptions — and see what's left as savings.
           </p>
         </div>
         <div class="rounded-xl border border-zinc-800 overflow-hidden">
@@ -273,10 +265,9 @@ import Layout from '../layouts/Layout.astro';
         </div>
         <div class="order-1 md:order-2">
           <p class="text-xs font-medium uppercase tracking-widest text-emerald-400 mb-3">Commitments</p>
-          <h3 class="text-2xl font-bold tracking-tight mb-4">Track every recurring charge</h3>
+          <h3 class="text-2xl font-bold tracking-tight mb-4">Find every subscription</h3>
           <p class="text-sm text-zinc-400 leading-relaxed">
-            Automatically detects recurring commitments by normalized merchant name.
-            See frequency, average cost, monthly and yearly totals with cost trend charts. Override detected amounts, mark ended or paused, and bulk-manage with lifecycle controls.
+            Automatically detects recurring charges and shows you the total damage — monthly and yearly. Great for finding that streaming service you signed up for once and forgot about.
           </p>
         </div>
       </div>
